@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Подтекст</string>
+    <string name="accessibility_service_label">Подтекст · Decoder</string>
+    <string name="accessibility_service_description">Слушает 4 быстрых тапа по сообщению в любом мессенджере и запускает анализ подтекста через локальную LLM. Никакие данные никуда не отправляются автоматически.</string>
+    <string name="accessibility_service_summary">4 тапа → расшифровка</string>
+</resources>

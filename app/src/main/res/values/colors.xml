@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cyber_bg">#FF000A14</color>
+    <color name="cyber_blue">#FF00E5FF</color>
+    <color name="cyber_blue_deep">#FF0080FF</color>
+    <color name="cyber_blue_dim">#FF004060</color>
+    <color name="cyber_red">#FFFF0040</color>
+</resources>
