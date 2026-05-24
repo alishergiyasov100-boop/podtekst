@@ -14,7 +14,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CutCornerShape
-import androidx.compose.foundation.shape.RectangleShape
 import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
@@ -30,6 +29,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.TextStyle
@@ -162,7 +162,7 @@ private fun StatusRow(label: String, ok: Boolean, onClick: () -> Unit) {
         verticalAlignment = androidx.compose.ui.Alignment.CenterVertically,
         modifier = Modifier
             .fillMaxWidth()
-            .border(1.dp, SolidColor(if (ok) CyberBlue else CyberRed), CutCornerShape(topStart = 8.dp, bottomEnd = 8.dp))
+            .border(1.dp, if (ok) CyberBlue else CyberRed, CutCornerShape(topStart = 8.dp, bottomEnd = 8.dp))
             .padding(12.dp)
     ) {
         Box(
@@ -223,7 +223,7 @@ private fun CyberField(label: String, value: String, onChange: (String) -> Unit)
         Box(
             modifier = Modifier
                 .fillMaxWidth()
-                .border(1.dp, SolidColor(CyberBlue))
+                .border(1.dp, CyberBlue)
                 .padding(horizontal = 10.dp, vertical = 8.dp)
         ) {
             BasicTextField(
@@ -253,7 +253,7 @@ private fun CyberButton(text: String, onClick: () -> Unit) {
         ),
         modifier = Modifier
             .fillMaxWidth()
-            .border(1.dp, SolidColor(CyberBlue), CutCornerShape(topStart = 8.dp, bottomEnd = 8.dp))
+            .border(1.dp, CyberBlue, CutCornerShape(topStart = 8.dp, bottomEnd = 8.dp))
     ) {
         Text(
             text,
